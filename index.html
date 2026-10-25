@@ -321,9 +321,9 @@ function imgFail(img){
     <div class="eyebrow">AI TRANSFORMATION</div>
     <h1>업무를 <em>AI로 자동화</em>하고,<br>결과를 데이터로 검증합니다.</h1>
     <ul class="strengths">
-      <li><span>아르바이트에서 출발</span>약 8년간 PDF 자료를 정리하고 질의에 답하며 반복하던 문서 탐색을, 외부 API 없이 동작하는 문서 질의응답(RAG)으로 만들었습니다.</li>
-      <li><span>요구와 제약 조율</span>산학 과제에서 약 1년간 실무진과 격주로 회의하며, 모델 입력 제약에 맞는 처리 방식을 대안으로 제시했습니다.</li>
-      <li><span>재현된 개선만 채택</span>개발용·평가용 데이터를 나누고, 같은 생성 모델로 비교하고, 오답을 검색 실패와 답변 실패로 나눠 원인을 찾습니다.</li>
+      <li><span>아르바이트에서 출발</span>약 8년간 여러 PDF 자료를 정리하고 질의에 답하며 반복하던 문서 탐색을, 외부 API 없이 동작하는 문서 질의응답(RAG)으로 만들었습니다.</li>
+      <li><span>요구와 제약 조율</span>산학 과제에서 약 1년간 실무진과 격주로 회의하며, 모델 입력 제약에 맞는 처리 방식을 제시했습니다.</li>
+      <li><span>재현된 개선만 채택</span>검증용 데이터를 같은 모델로 비교하고, 오답의 유형을 나눠 원인을 찾습니다.</li>
     </ul>
 
     <div class="pcards">
@@ -331,9 +331,9 @@ function imgFail(img){
         <div class="pc-top"><span class="num">01</span><span class="chip">개인</span><span class="chip g">2026.01 – 2026.10</span></div>
         <h3>외부 API 없는 문서 질의응답(RAG)</h3>
         <dl>
-          <dt>문제</dt><dd>표·이미지 페이지는 검색되지 않아, 한 질의에 PDF 3–4개를 직접 넘겨 봄</dd>
-          <dt>역할</dt><dd>문제 정의부터 설계·구현·평가·분석까지 1인 수행</dd>
-          <dt>결과</dt><dd>같은 생성 모델 기준 정답률 54.6% → 71.7%</dd>
+          <dt>문제</dt><dd>표나 이미지 페이지는 검색되지 않아, 한 질의에 PDF 3-4개를 직접 확인</dd>
+          <dt>역할</dt><dd>문제 정의부터 구현 평가 및 분석까지 1인 수행</dd>
+          <dt>결과</dt><dd>같은 AI 모델 기준 정답률 54.6% → 71.7%</dd>
         </dl>
         <span class="more">자세히 보기 →</span>
       </a>
@@ -341,9 +341,9 @@ function imgFail(img){
         <div class="pc-top"><span class="num">02</span><span class="chip">산학 3인 팀</span><span class="chip">개인 후속</span></div>
         <h3>공연 영상 하이라이트 생성</h3>
         <dl>
-          <dt>문제</dt><dd>하이라이트 기준이 사람마다 다르고, 장면 선별을 사람이 직접 함</dd>
-          <dt>역할</dt><dd>(A) 파이프라인 구현 전담 · (B) 신호 설계, 워크플로우·대시보드, 평가</dd>
-          <dt>결과</dt><dd>(B) 실제 편집본 대비 평균 정밀도 84.0% · 재현율 83.4% (영상 5편)</dd>
+          <dt>문제</dt><dd>상이한 하이라이트 기준 및 기획 의도에 따른 장면 선별</dd>
+          <dt>역할</dt><dd>(A) 파이프라인 구현 전담 (B) 신호 설계, 워크플로우와 대시보드, 평가</dd>
+          <dt>결과</dt><dd>(B) 실제 편집본 대비 평균 정밀도 84.0%, 재현율 83.4% (영상 5편)</dd>
         </dl>
         <span class="more">자세히 보기 →</span>
       </a>
@@ -351,9 +351,9 @@ function imgFail(img){
         <div class="pc-top"><span class="num">03</span><span class="chip">석사 연구</span><span class="chip g">제1저자 논문 3편</span></div>
         <h3>비디오 구간 탐색 연구</h3>
         <dl>
-          <dt>문제</dt><dd>영상 속 장면 구간을 찾는 모델을 제한된 GPU 자원에서 학습해야 함</dd>
-          <dt>역할</dt><dd>문제 정의, 모델 구축, 압축 모듈 구현, 실험·분석, 논문 작성</dd>
-          <dt>결과</dt><dd>비교 모델 대비 mIoU +4.18%p · 입력 토큰 50% 압축</dd>
+          <dt>문제</dt><dd>제한된 GPU 자원으로 질의에 해당하는 영상 구간 탐색 멀티모달 모델 학습</dd>
+          <dt>역할</dt><dd>문제 정의, 모델 구축, 압축 모듈 구현, 실험과 분석, 논문 작성</dd>
+          <dt>결과</dt><dd>비교 모델 대비 mIoU +4.18%p 및 입력 토큰 50% 압축</dd>
         </dl>
         <span class="more">자세히 보기 →</span>
       </a>
@@ -366,16 +366,15 @@ function imgFail(img){
   <div class="wrap">
     <div class="s-head">
       <span class="tag">PROJECT 01 · 개인 · 2026.01 – 2026.10</span>
-      <h2>외부 API 없는 문서 질의응답(RAG) 프레임워크</h2>
-      <p>같은 생성 모델(Command-R)을 쓰면서, 공개 기준 구성보다 정답률을 17.1%p 높였습니다. 생성 모델이 같으므로 이 차이는 문서 처리와 검색 설계에서 생겼습니다.</p>
+      <h2>외부 API 없는 문서 질의응답 RAG 프레임워크</h2>
+      <p>LLM 모델(Command-R) 변경 없이 문서 처리와 검색 설계를 개선하여 공개 기준 구성 대비 정답률을 17.1%p 높였습니다.</p>
     </div>
 
     <div class="grid3">
-      <div class="kpi"><div class="v">54.6% → 71.7%</div><div class="l">정답률 (+17.1%p)</div><p>평가용 152문항 · 양쪽 모두 Command-R · 같은 채점 방식</p></div>
-      <div class="kpi"><div class="v">93.4%</div><div class="l">정답 근거 페이지 검색률</div><p>같은 152문항 · 검색 결과 상위 3개 안에 정답 페이지 포함</p></div>
-      <div class="kpi"><div class="v">82.9% → 93.4%</div><div class="l">문서 처리 결함 수정 효과</div><p>같은 152문항 · 오류 4종을 찾아 고친 전후의 검색률</p></div>
+      <div class="kpi"><div class="v">54.6% → 71.7%</div><div class="l">정답률 (+17.1%p)</div><p>평가 152문항 · 공통 LLM Command-R 및 채점 방식</p></div>
+      <div class="kpi"><div class="v">93.4%</div><div class="l">정답 근거 페이지 검색률</div><p>검색 결과 상위 3개 안에 정답 페이지 포함</p></div>
+      <div class="kpi"><div class="v">82.9% → 93.4%</div><div class="l">문서 처리 결함 수정 효과</div><p>오류 4종을 찾아 고친 전후의 검색률</p></div>
     </div>
-    <p class="note">RAG: 문서에서 근거를 먼저 찾고, 그 근거로 AI가 답하게 하는 방식 · OCR: 이미지 속 글자를 텍스트로 바꾸는 기술 · VLM: 이미지를 보고 글로 설명하는 모델</p>
 
     <h3 class="sub"><span class="n">1.1</span>한눈에 보기</h3>
     <dl class="ov">
