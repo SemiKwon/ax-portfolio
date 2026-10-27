@@ -331,8 +331,8 @@ function imgFail(img){
         <div class="pc-top"><span class="num">01</span><span class="chip">개인</span><span class="chip g">2026.01 – 2026.10</span></div>
         <h3>외부 API 없는 문서 질의응답(RAG)</h3>
         <dl>
-          <dt>문제</dt><dd>표나 이미지 페이지는 검색되지 않아, 한 질의에 PDF 3-4개를 직접 확인</dd>
-          <dt>역할</dt><dd>문제 정의부터 구현 평가 및 분석까지 1인 수행</dd>
+          <dt>문제</dt><dd>표나 이미지 페이지 검색 누락으로 인한 질의당 PDF 3-4개를 직접 검토</dd>
+          <dt>역할</dt><dd>문제 정의, 시스템 구현, 평가, 분석 수행</dd>
           <dt>결과</dt><dd>같은 AI 모델 기준 정답률 54.6% → 71.7%</dd>
         </dl>
         <span class="more">자세히 보기 →</span>
@@ -341,9 +341,9 @@ function imgFail(img){
         <div class="pc-top"><span class="num">02</span><span class="chip">산학 3인 팀</span><span class="chip">개인 후속</span></div>
         <h3>공연 영상 하이라이트 생성</h3>
         <dl>
-          <dt>문제</dt><dd>상이한 하이라이트 기준 및 기획 의도에 따른 장면 선별</dd>
+          <dt>문제</dt><dd>하이라이트 기준과 기획 의도에 따른 장면 선별</dd>
           <dt>역할</dt><dd>(A) 파이프라인 구현 전담 (B) 신호 설계, 워크플로우와 대시보드, 평가</dd>
-          <dt>결과</dt><dd>(B) 실제 편집본 대비 평균 정밀도 84.0%, 재현율 83.4% (영상 5편)</dd>
+          <dt>결과</dt><dd>(B) 실제 편집본 대비 영상 5편 기준 평균 정밀도 84.0%, 재현율 83.4%</dd>
         </dl>
         <span class="more">자세히 보기 →</span>
       </a>
@@ -352,7 +352,7 @@ function imgFail(img){
         <h3>비디오 구간 탐색 연구</h3>
         <dl>
           <dt>문제</dt><dd>제한된 GPU 자원으로 질의에 해당하는 영상 구간 탐색 멀티모달 모델 학습</dd>
-          <dt>역할</dt><dd>문제 정의, 모델 구축, 압축 모듈 구현, 실험과 분석, 논문 작성</dd>
+          <dt>역할</dt><dd>문제 정의, 모델 파이프라인 구축, 압축 모듈 구현, 실험과 분석, 논문 작성</dd>
           <dt>결과</dt><dd>비교 모델 대비 mIoU +4.18%p 및 입력 토큰 50% 압축</dd>
         </dl>
         <span class="more">자세히 보기 →</span>
